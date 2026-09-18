@@ -1,0 +1,21 @@
+name: ARCHITECTON CFD validate
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate configuration
+        run: python tools/validate_config.py
+      - name: Execute deterministic CFD MVP
+        run: python tests/test_cfd_mvp.py
+      - name: Upload evidence artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: farm52-cfd-mvp-evidence
+          path: artifacts/cfd_mvp.json
