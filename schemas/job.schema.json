@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "job_id",
+    "farm_id",
+    "task_type",
+    "parameters",
+    "units",
+    "engine",
+    "outputs",
+    "validation",
+    "evidence_level",
+    "status"
+  ],
+  "properties": {
+    "job_id": {
+      "type": "string"
+    },
+    "farm_id": {
+      "const": 52
+    },
+    "task_type": {
+      "type": "string"
+    },
+    "parameters": {
+      "type": "object"
+    },
+    "units": {
+      "type": "object"
+    },
+    "engine": {
+      "type": "string"
+    },
+    "outputs": {
+      "type": "array"
+    },
+    "validation": {
+      "type": "object"
+    },
+    "evidence_level": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}
