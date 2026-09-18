@@ -1,0 +1,60 @@
+{
+  "version": "1.0",
+  "engines": [
+    {
+      "engine_id": "PY-CFD-MVP",
+      "name": "Python deterministic fluid sanity engine",
+      "category": "fluid-calculation",
+      "license": "runtime",
+      "cost": "included",
+      "local_or_cloud": "github-runner",
+      "version": "stdlib",
+      "capabilities": [
+        "Reynolds number",
+        "laminar pipe pressure drop",
+        "unit sanity"
+      ],
+      "limitations": [
+        "not CFD",
+        "not finite volume",
+        "not turbulence solver"
+      ],
+      "validation_status": "MVP",
+      "benchmark_status": "PENDING"
+    },
+    {
+      "engine_id": "OPENFOAM",
+      "name": "OpenFOAM",
+      "category": "CFD",
+      "license": "GPL",
+      "cost": "free",
+      "local_or_cloud": "runner",
+      "version": "UNKNOWN",
+      "capabilities": [
+        "finite-volume CFD"
+      ],
+      "limitations": [
+        "availability not yet verified"
+      ],
+      "validation_status": "UNKNOWN",
+      "benchmark_status": "PENDING"
+    },
+    {
+      "engine_id": "GMSH",
+      "name": "Gmsh",
+      "category": "meshing",
+      "license": "GPL",
+      "cost": "free",
+      "local_or_cloud": "runner",
+      "version": "UNKNOWN",
+      "capabilities": [
+        "mesh generation"
+      ],
+      "limitations": [
+        "availability not yet verified"
+      ],
+      "validation_status": "UNKNOWN",
+      "benchmark_status": "PENDING"
+    }
+  ]
+}
