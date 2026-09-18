@@ -14,3 +14,5 @@ Rules:
 - Solver availability and version must be verified before claiming execution.
 
 Initial MVP is a deterministic analytical fluid benchmark. OpenFOAM and Gmsh remain candidate engines until actually detected and benchmarked.
+
+Validation trigger: 2026-09-18 batch verification.
