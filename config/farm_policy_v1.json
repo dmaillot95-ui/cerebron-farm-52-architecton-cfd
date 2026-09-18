@@ -1,0 +1,17 @@
+{
+  "farm_id": 52,
+  "name": "ARCHITECTON CFD Ω",
+  "domain": "computational-fluid-dynamics",
+  "status": "SCAFFOLDED",
+  "evidence_rules": [
+    "CLAIM <= EVIDENCE",
+    "SIMULATION != TEST",
+    "CONVERGENCE != PHYSICAL VALIDATION"
+  ],
+  "required_outputs": [
+    "artifact",
+    "validation",
+    "provenance"
+  ],
+  "engines_policy": "candidate CFD engines must be detected and benchmarked before VERIFIED"
+}
